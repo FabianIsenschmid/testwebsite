@@ -21,11 +21,7 @@ function Gallery({ images }) {
     const onKeyDown = (e) => {
       if (e.key === 'Escape' || e.key === 'Esc') {
         if (activeIndex !== null) {
-          if (location.pathname === '/') {
-            navigate('/');
-          } else {
-            setActiveIndex(null);
-          }
+            setActiveIndex(null);  
         }
       }
       if (activeIndex !== null) {
